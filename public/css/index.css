@@ -28,7 +28,7 @@ header {
     height: 80px;
     display: flex;
     align-items: center;
-    background-color: rgb(173, 162, 162);
+    background-color: #F5F7FC;
 }
 
 header * {

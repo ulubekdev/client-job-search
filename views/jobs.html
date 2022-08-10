@@ -15,35 +15,67 @@
     <form class="filters" method="get">
         <div class="filter">
             <h4>Search by keywords</h4>
-                <input type="text" name="title" placeholder="Job title...">
+            <img src="./img/job.png" alt="job-icon" class="icon"><input type="text" name="title" placeholder="Job title...">
         </div>
         <div class="filter">
             <h4>Location area</h4>
-                <input type="text" name="location" placeholder="Location area">
+            <img src="./img/location.png" alt="job-icon" class="icon"><input type="text" name="location" placeholder="Location area">
         </div>
         <div class="filter">
             <h4>Category</h4>
-                <input type="text" name="category" placeholder="Category">
+            <img src="./img/category.png" alt="job-icon" class="icon"><input type="text" name="category" placeholder="Category">
         </div>
         <div class="btn">
             <button type="submit">Search</button>
         </div>
     </form>
 
+    <form class="sort" method="get">
+        <div class="sort-options">
+            <select name="orderby" id="order">
+                <option value="default">Sort (Default)</option>
+                <option value="new">Latest</option>
+                <option value="old">Oldest one</option>
+                <option value="name_high">Name (A -> Z)</option>
+                <option value="name_low">Name (Z -> A)</option>
+            </select>
+            <select name="limit" id="limit">
+                <option value="10">Limit (10)</option>
+                <option value="20">Limit (20)</option>
+                <option value="30">Limit (30)</option>
+                <option value="40">Limit (40)</option>
+                <option value="50">Limit (50)</option> 
+            </select>
+        </div>
+        <div class="btn">
+            <button type="submit">Sort</button>
+        </div>
+    </form>
     <div class="container">
         <div class="result">
-            <h1>Job Title</h1>
-            <p>Job Description</p>
-            <p>Job Location</p> 
-            <p>Job Salary</p>
-            <p>Job Date</p>
-        </div>
-        <div class="result">
-            <h1>Job Title</h1>
-            <p>Job Description</p>
-            <p>Job Location</p> 
-            <p>Job Salary</p>
-            <p>Job Date</p>
+            <h2>
+                <a href="jobs/job_title">Job Title</a>
+            </h2>
+
+            <ul class="job_info">
+                <li>
+                    <img src="./img/category.png" alt="category" class="iconn">
+                    Programming
+                </li>
+                <li>
+                    <img src="./img/location.png" alt="location" class="iconn">
+                    Tashkent
+                </li>
+                <li>
+                    <img src="./img/clock.png" alt="clock" class="iconn">
+                    04-07-2022
+                </li>
+                <li>
+                    <span class="required">Quickly</span>
+                    <span class="time">Permament</span>
+                    <span class="money">100$-500$</span>
+                </li>
+            </ul>
         </div>
     </div>
 </body>
