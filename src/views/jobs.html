@@ -12,44 +12,40 @@
     <title>Jobs</title>
 </head>
 <body>
+    <%- include('index.html')  %>
     <form class="filters" method="get">
         <div class="filter">
-            <h4>Search by keywords</h4>
+            <p>Search by keywords</p>
             <img src="./img/job.png" alt="job-icon" class="icon"><input type="text" name="title" placeholder="Job title...">
         </div>
         <div class="filter">
-            <h4>Location area</h4>
+            <p>Location area</p>
             <img src="./img/location.png" alt="job-icon" class="icon"><input type="text" name="location" placeholder="Location area">
         </div>
         <div class="filter">
-            <h4>Category</h4>
+            <p>Category</p>
             <img src="./img/category.png" alt="job-icon" class="icon"><input type="text" name="category" placeholder="Category">
         </div>
-        <div class="btn">
+        <div class="search">
             <button type="submit">Search</button>
         </div>
     </form>
 
     <form class="sort" method="get">
-        <div class="sort-options">
-            <select name="orderby" id="order">
-                <option value="default">Sort (Default)</option>
-                <option value="new">Latest</option>
-                <option value="old">Oldest one</option>
-                <option value="name_high">Name (A -> Z)</option>
-                <option value="name_low">Name (Z -> A)</option>
-            </select>
-            <select name="limit" id="limit">
-                <option value="10">Limit (10)</option>
-                <option value="20">Limit (20)</option>
-                <option value="30">Limit (30)</option>
-                <option value="40">Limit (40)</option>
-                <option value="50">Limit (50)</option> 
-            </select>
-        </div>
-        <div>
-            <button type="submit">Sort</button>
-        </div>
+        <select name="orderby" id="order" onchange="this.form.submit()">
+            <option value="default">Sort (Default)</option>
+            <option value="new">Latest</option>
+            <option value="old">Oldest one</option>
+            <option value="name_high">Name (A -> Z)</option>
+            <option value="name_low">Name (Z -> A)</option>
+        </select>
+        <select name="limit" id="limit" onchange="this.form.submit()">
+            <option value="10">Limit (10)</option>
+            <option value="20">Limit (20)</option>
+            <option value="30">Limit (30)</option>
+            <option value="40">Limit (40)</option>
+            <option value="50">Limit (50)</option> 
+        </select>
     </form>
     <div class="container">
         <div class="result">

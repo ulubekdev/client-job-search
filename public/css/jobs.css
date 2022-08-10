@@ -4,7 +4,6 @@
 .filters {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
     background-color: #F5F7FC;
     display: flex;
     flex-flow: row wrap;
@@ -19,16 +18,16 @@
 }
 
 .filter h4 {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .filters input {
     vertical-align: middle;
-    margin: 5px 50px 18px 12px;
+    margin: 5px 50px 15px 12px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .icon {
@@ -43,15 +42,14 @@
 }
 
 .filters button {
-    margin-top: 60px;
+    margin-top: 40px;
     padding: 10px 50px;
     background-color: #ff9800;
     border: 1px solid #ddd;
     border-radius: 10px;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     cursor: pointer;
-
 }
 
 .filters button:hover {
@@ -135,34 +133,18 @@
     font-size: 15px;
     padding: 8px;
 }
-
-
 .sort {
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 50px;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
 }
 #order {
-    font-size: 15px;
+    font-size: 16px;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
 }
 #limit {
-    font-size: 15px;
+    font-size: 16px;
     margin-left: auto;
     margin-right: auto;
-    cursor: pointer;
-}
-.sort button {
-    padding: 5px 30px;
-    background-color: #ff9800;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    color: white;
-    font-size: 15px;
     cursor: pointer;
 }

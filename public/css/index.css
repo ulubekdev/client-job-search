@@ -1,16 +1,8 @@
 *{
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
-    font-size: 100%;
     font-family: 'Ubuntu', sans-serif;
 }
-*, ::after, ::before {
-    box-sizing: border-box;
-}
 
-header img {
+.main-logo {
     height: 50px;
     margin-left: 40px;
 }
@@ -20,7 +12,7 @@ body {
     margin-top: 80px;
     padding: 30px;
 }
-header {
+.main {
     position: fixed;
     top: 0;
     left: 0;
@@ -31,15 +23,15 @@ header {
     background-color: #F5F7FC;
 }
 
-header * {
+.main * {
     display: inline;
 }
 
-header li {
+.main li {
     margin: 20px;
 }
 
-header li a {
+.main li a {
     margin-left: 50px;
     color: black;
     text-decoration: none;
@@ -47,6 +39,6 @@ header li a {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
-header li a:hover {
+.main li a:hover {
     color: #ff9800;
 }
