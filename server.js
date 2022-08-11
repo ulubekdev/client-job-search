@@ -11,8 +11,8 @@ app.engine('html', ejs.renderFile);
 app.set('view engine', 'html');
 app.set('views', './src/views');
 
-const navbar = require('./src/routes/navbar.js');
+const manage = require('./src/routes/manage.js');
 
-app.use(navbar);
+app.use(manage);
 
 app.listen(PORT, () => console.log(`client running at http://localhost:${PORT}`));
