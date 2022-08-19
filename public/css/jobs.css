@@ -69,7 +69,7 @@
 }
 
 .container {
-    margin-left: 200px;
+    margin-left: 164px;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
@@ -107,7 +107,7 @@
 
 .job_info li {
     float: left;
-    margin: 10px;
+    margin: 13px;
     padding: 10px;
 }
 
